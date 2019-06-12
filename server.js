@@ -57,7 +57,7 @@ var server = http.createServer(function (request, response) {
     response.setHeader('Content-Type', 'text/javascript')
     response.write('console.log("这是一个main.js")')
   } else {
-    response.statusCode = 400
+    response.statusCode = 404
   }
   response.end()
 
